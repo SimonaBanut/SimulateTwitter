@@ -39,4 +39,12 @@ function addTweet() {
         location.href = "index.html";
     });
 }
+function follow() {
+    var toFriend = document.getElementById('friend').value;
+    $.ajax({
+        url: 'follow?numeFriend='+toFriend
+    }).done(function (response) {
+        location.href = "index.html";
+    });
+}
 

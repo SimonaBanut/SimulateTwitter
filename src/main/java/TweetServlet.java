@@ -23,9 +23,6 @@ public class TweetServlet extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-
-
-
             HttpSession session = req.getSession(true);
 
             Integer iduser = (Integer) session.getAttribute("iduser");
